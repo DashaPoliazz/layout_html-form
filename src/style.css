@@ -8,27 +8,14 @@
   margin-bottom: 10px;
 }
 
-.personal-information__confirmatrion {
-  margin-bottom: 0;
-}
-
-.registration__password {
-  margin-bottom: 0;
-}
-
-.work {
+.mb-0 {
   margin-bottom: 0;
 }
 
 .car > select {
   overflow-y: hidden;
-  margin-bottom: 0;
 }
 
 .facts__answer {
   display: inline-block;
-}
-
-.additional__comments {
-  margin-bottom: 10px;
 }

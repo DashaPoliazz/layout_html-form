@@ -54,7 +54,7 @@
           type="date"
           name="date">
         </label>
-        <label class="personal-information__confirmatrion label">
+        <label class="personal-information__confirmatrion label mb-0">
           I accept the term of the agreement
           <input type="checkbox" name="isAgree">
         </label>
@@ -71,7 +71,7 @@
             name="email"
           >
         </label>
-        <label class="registration__password label">
+        <label class="registration__password label mb-0">
           Password: <input type="password" name="password">
         </label>
       </fieldset>
@@ -88,28 +88,30 @@
         <label class="facts__color label">
           What is your favurite color?
           <input
-          type="color"
-          name="color">
+            type="color"
+            name="color">
         </label>
         <label class="facts__time label">
           What time do you go to bed?
           <input
-          type="time"
-          step="1"
-          name="time">
+            type="time"
+            step="1"
+            name="time">
         </label>
         <label class="car label">
           What are you favorite brand of cars?
-          <select multiple name="cars">
+          <select class="mb-0" multiple
+            name="cars">
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
           </select>
         </label>
-        <label class="work label">
-          How do you rate our work? <input
-          type="range" value="0"
-          name="rate">
+        <label class="work label mb-0">
+          How do you rate our work?
+          <input
+            type="range" value="0"
+            name="rate">
         </label>
       </fieldset>
 
