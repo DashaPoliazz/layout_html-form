@@ -1,17 +1,132 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" >
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
     <title>HTML Form</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" >
   </head>
+
   <body>
-    <h1>HTML Form</h1>
+    <form class="form" action="submit">
+      <fieldset class="personal-information">
+        <legend>Personal information</legend>
+        <label class="personal-information__surname">
+          Surname:
+          <input
+            type="text"
+            class="personal-information__item"
+            autocomplete="off"
+            name="surname"
+          >
+        </label>
+        <label class="peronal-information__name">
+          Name:
+          <input
+            class="personal-information__item"
+            type="text"
+            autocomplete="off"
+            name="name"
+          >
+        </label>
+        <label class="peronal-information__name">
+          How old are You?
+          <input
+            class="personal-information__item"
+            type="number"
+            value="12"
+            min="1"
+            max="100"
+            autocomplete="off"
+            name="age"
+          >
+        </label>
+        <label class="personal-information__birth">
+          Full date of birth:
+          <input
+          class="personal-information__item"
+          type="date"
+          name="date">
+        </label>
+        <label class="personal-information__confirmatrion">
+          I accept the term of the agreement <input type="checkbox" name="isAgree">
+        </label>
+      </fieldset>
+
+      <fieldset class="registration">
+        <legend>Registration</legend>
+        <label class="registration__email">
+          E-mail:
+          <input
+            class="registration__item"
+            type="email"
+            placeholder="email@example.com"
+            name="email"
+          >
+        </label>
+        <label class="registration__password">
+          Password: <input type="password" name="password">
+        </label>
+      </fieldset>
+
+      <fieldset class="facts">
+        <legend>An interesting fact about you!</legend>
+        Do you love cats?
+        <label class="facts__answer facts__answer--yes">
+          <input type="radio" name="answer"> Yes
+        </label>
+        <label class="facts__answer facts__answer--yes">
+          <input type="radio" name="answer"> No
+        </label>
+        <label class="facts__color">
+          What is your favurite color?
+          <input
+          type="color"
+          name="color">
+        </label>
+        <label class="facts__time">
+          What time do you go to bed?
+          <input
+          type="time"
+          step="1"
+          name="time">
+        </label>
+        <label class="car">
+          What are you favorite brand of cars?
+          <select multiple name="cars">
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label>
+        <label class="work">
+          How do you rate our work? <input
+          type="range" value="0"
+          name="rate">
+        </label>
+      </fieldset>
+
+      <fieldset class="additional">
+        <legend>Additioanl info</legend>
+        <label class="additional__comments">
+          Comments: <textarea cols="15" rows="2"></textarea>
+        </label>
+        Would you recommend us?
+        <select name="feedback">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </fieldset>
+
+      <button class="form__button button" type="submit">
+        Submit
+      </button>
+    </form>
+
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
