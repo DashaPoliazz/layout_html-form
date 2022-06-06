@@ -12,9 +12,11 @@
   </head>
 
   <body>
-    <form class="form"
-    method="post"
-    action="https://mate-academy-form-lesson.herokuapp.com/create-applicat">
+    <form
+      class="form"
+      method="post"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-applicat"
+    >
       <fieldset class="personal-information fieldset">
         <legend>Personal information</legend>
         <label class="personal-information__surname label">
@@ -50,13 +52,14 @@
         <label class="personal-information__birth label">
           Full date of birth:
           <input
-          class="personal-information__item"
-          type="date"
-          name="date">
+            class="personal-information__item"
+            type="date"
+            name="date"
+          >
         </label>
         <label class="personal-information__confirmatrion label mb-0">
           I accept the term of the agreement
-          <input type="checkbox" name="isAgree">
+          <input type="checkbox" name="isAgree" >
         </label>
       </fieldset>
 
@@ -72,7 +75,7 @@
           >
         </label>
         <label class="registration__password label mb-0">
-          Password: <input type="password" name="password">
+          Password: <input type="password" name="password" >
         </label>
       </fieldset>
 
@@ -80,27 +83,28 @@
         <legend>An interesting fact about you!</legend>
         Do you love cats?
         <label class="facts__answer facts__answer--yes label">
-          <input type="radio" name="answer"> Yes
+          <input type="radio" name="answer" > Yes
         </label>
         <label class="facts__answer facts__answer--yes label">
-          <input type="radio" name="answer"> No
+          <input type="radio" name="answer" > No
         </label>
         <label class="facts__color label">
           What is your favurite color?
-          <input
-            type="color"
-            name="color">
+          <input type="color" name="color" >
         </label>
         <label class="facts__time label">
           What time do you go to bed?
           <input
             type="time"
             step="1"
-            name="time">
+            name="time"
+          >
         </label>
         <label class="car label">
           What are you favorite brand of cars?
-          <select class="mb-0" multiple
+          <select
+            class="mb-0"
+            multiple
             name="cars">
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
@@ -110,8 +114,10 @@
         <label class="work label mb-0">
           How do you rate our work?
           <input
-            type="range" value="0"
-            name="rate">
+            type="range"
+            value="0"
+            name="rate"
+          >
         </label>
       </fieldset>
 
@@ -127,9 +133,7 @@
         </select>
       </fieldset>
 
-      <button class="form__button button" type="submit">
-        Submit
-      </button>
+      <button class="form__button button" type="submit">Submit</button>
     </form>
 
     <script type="text/javascript" src="./main.js"></script>
